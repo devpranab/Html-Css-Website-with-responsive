@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* Header Css Start */
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/sunset-g1e520c998_1920.jpg");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.headerContainer {
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+.headerContainer h2 {
+  font-size: 4vmin;
+}
+.headerContainer h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.line {
+  width: 150px;
+  height: 4px;
+  background-color: red;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+.headerBtn {
+  padding: 10px 17px;
+  background-color: red;
+  color: whitesmoke;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+.headerBtn:hover {
+  color: red;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 5px #00000056;
+}
+/* Header Css End */
+
+/* Nav Css Start */
+.navbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+  padding: 20px;
+}
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+.navLinks li {
+  margin: 0 30px;
+}
+.navLinks li a{
+  color: #fff;
+}
+.navLinks li a:hover{
+  color: red;
+  text-decoration: underline;
+}
+#active a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-decoration: underline;
+}
+.menuBtn {
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+/* Nav Css Start */
+
+/* Events Css Start */
+.events {
+  width: 90%;
+  margin: 80px auto;
+}
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: #49497e;
+}
+.row {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row img {
+  width: 80%;
+  transition: transform 0.3s ease;
+}
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.events .row {
+  margin-top: 50px;
+}
+h4 {
+  font-size: 3vmin;
+  color: #484872;
+  margin: 20px auto;
+}
+p {
+  color: #7c7c7c;
+  padding: 0 40px;
+}
+.events img:hover {
+  transform: scale(1.1);
+}
+/* Events Css End */
+
+/* Explore Css Start */
+.explore {
+  width: 100%;
+  height: 80vh;
+  background-image: url("./images/sunset-g1e520c998_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.exploreContent {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.exploreContent h1 {
+  font-size: 7vmin;
+  margin: 50px;
+}
+/* Explore Css End */
+
+/* Tours Css Start */
+.tours .row .col {
+  width: 50%;
+}
+.imgGallery img {
+  max-width: 250px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+.imgGallery img:hover {
+  transform: scale(1.1);
+}
+.imgGallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+.contentCol {
+  width: 40%;
+}
+.imgCol {
+  width: 60%;
+}
+.contentCol h1 {
+  font-size: 7vmin;
+  color: #484872;
+}
+.contentCol p {
+  padding: 0;
+  margin: 30px auto;
+}
+.contentCol .line {
+  margin-left: -1px;
+}
+.contentCol .headerBtn {
+  margin-left: -470px;
+}
+/* Tours Css End */
+
+.subscribe {
+  width: 100%;
+  min-height: 150px;
+  padding: 50px 20px;
+}
+.subscribe .inputDiv {
+  width: 100%;
+}
+.subscribe input {
+  padding: 10px 20px;
+}
+
+/* Footer Css Start */
+.footer {
+  width: 100%;
+  min-height: 100px;
+  text-align: center;
+  padding: 20px 80px;
+  margin: 0;
+  background-color: #484872;
+}
+.footer p {
+  color: whitesmoke;
+  margin: 20px auto;
+}
+/* Footer Css End */
+
+/* Responsive Css Start */
+@media only screen and (max-width: 850px) {
+  .menuBtn {
+    display: block;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .navLinks {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: rgb(54, 54, 54);
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+  .mobileMenu {
+    margin-top: 0px;
+  }
+  .navLinks li {
+    margin: 20px auto;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .col img {
+    min-width: 90%;
+  }
+  .row .col {
+    margin: 20px auto;
+  }
+  .exploreContent {
+    width: 100%;
+  }
+  .contentCol .headerBtn {
+    margin-left: 0;
+  }
+  .tours .col {
+    width: 100%;
+  }
+  .imgGallery {
+    width: 100%;
+  }
+  .subscribe {
+    text-align: center;
+  }
+  .subscribe input {
+    margin: 20px 0px;
+  }
+  .subscribe .inputDiv {
+    margin: 30px 10px;
+  }
+  .footer {
+    padding: 10px;
+  }
+}
+/* Responsive Css End */
